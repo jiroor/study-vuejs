@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Study Vue.js</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- 1. レンダリング -->
+      <p>{{message}}</p>
+
+      <!-- 2. バインディング -->
+      <p v-bind:title="hovered">この文にマウスを乗せて数秒すると、バインドしたタイトルが表示されます</p>
+
+      <!-- 3. 条件分岐 -->
+      <p v-if="seen">この文が表示されます</p>
+
+      <!-- 4. ループ -->
+      <ol>
+        <li v-for="todo in todos">{{todo.text}}</li>
+      </ol>
+
+      <!-- 5. イベントリスナ -->
+      <p>{{title}}</p>
+      <button v-on:click="addG">Add G</button>
+
+      <!-- 6. 双方向バインディング -->
+      <p>{{input}}</p>
+      <input type="text" v-model="input">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

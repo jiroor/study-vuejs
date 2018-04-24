@@ -1,0 +1,11 @@
+{
+  "name": "study-vuejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "python -m SimpleHTTPServer"
+  },
+  "repository": "git@github.com:jiroor/study-vuejs.git",
+  "author": "jiroor <thx.1by1.or25@gmail.com>",
+  "license": "MIT"
+}
